@@ -1,0 +1,35 @@
+# Map movement controls to the left stick
+w = leftY-
+a = leftX-
+s = leftY+
+d = leftX+
+
+up = dpadUp
+left = dpadLeft
+right = dpadRight
+down = dpadDown
+
+f = X
+r = O
+tab = square
+e = triangle
+
+c = L1
+shift = R1
+
+control = L2
+q = R2
+
+escape = options
+f12 = share
+
+p = PS
+t = touchpad
+
+# Map mouse to the right stick
+mouseLook.type = linear # 1:1 translation mode, no curve
+mouseLook.stick = right
+mouseLook.multY = 1 # Flips the Y axis for mouseLook
+mouseLook.deadZone = 0 # Sets the dead zone for the joystick
+mouseLook.decay = 15 # What the joystick movement is divided by at each tick (probably does very little)
+
