@@ -2,6 +2,7 @@ import json, string, sys
 
 letters = 0, 11, 8, 2, 14, 3, 5, 4, 34, 38, 40, 37, 46, 45, 31, 35, 12, 15, 1, 17, 32, 9, 13, 7, 16, 6
 nums = 29, 18, 19, 20, 21, 23, 22, 26, 28, 25
+functions = 122, 120, 99, 118, 96, 97, 98, 100, 101, 109, 103, 111, 105, 107, 113, 106, 64, 79, 80, 90
 
 keys = dict(
 	space=49, 
@@ -28,6 +29,8 @@ for i, x in enumerate(letters):
 	keys[chr(ord('a') + i)] = x
 for i, x in enumerate(nums):
 	keys[str(i)] = x
+for i, x in enumerate(functions):
+	keys['f' + str(i+1)] = x
 
 def parse(data):
 	lines = (line.split('#', 1)[0].strip() for line in data.split('\n'))
