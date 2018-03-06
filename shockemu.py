@@ -16,7 +16,8 @@ keys = dict(
 	capslock=57, 
 	tab=48, 
 	backtick=50, 
-	comma=43, period=47, slash=44, backslash=42, 
+	comma=43, period=47, slash=44,
+        semicolon=41, quote=39, backslash=42, 
 	delete=51, 
 	escape=53, 
 )
